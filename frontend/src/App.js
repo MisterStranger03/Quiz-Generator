@@ -11,6 +11,7 @@ function App() {
             <header className="App-header">
                 <h1>AI Quiz Generator</h1>
                 <p>Powered by Hugging Face Transformers</p>
+                <p>Developed By Raman</p>
             </header>
             <main className="App-main">
                 {!quizData ? (
