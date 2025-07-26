@@ -101,7 +101,7 @@ MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/<database-name>
 Example:
 
 ```bash
-MONGO_URI=mongodb+srv://admin:admin123@cluster0.abcde.mongodb.net/quizdb
+MONGO_URI=mongodb+srv://abc:abc123@cluster0.abcde.mongodb.net/quizdb
 ```
 
 🎨 Step 3: Setup the Frontend
