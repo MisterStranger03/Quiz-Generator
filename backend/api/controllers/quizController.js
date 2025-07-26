@@ -1,5 +1,5 @@
-const { generateQuestions } = require('../services/nlpService');
-const Quiz = require('../models/quizModel');
+const { generateQuestions } = require('../services/NLPService');
+const Quiz = require('../models/QuizModel');
 
 exports.generateQuiz = async (req, res) => {
     const { title, content } = req.body;

@@ -21,7 +21,7 @@ const initializemodel_running = async () => {
         const { pipeline } = await import('@xenova/transformers');
         
         const modelName = 'Xenova/flan-t5-small';
-        console.log(`Initializing instruction-tuned model: ${modelName}`);
+        // console.log(`Initializing instruction-tuned model: ${modelName}`);
 
         model_running = await pipeline('text2text-generation', modelName);
         
@@ -59,13 +59,7 @@ const generateQuestions = async (context) => {
     });
 
     const finalQuestions = Array.from(uniqueQuestions).slice(0, 10); 
-
     console.log("Successfully generated questions:", finalQuestions);
-    
-    if (finalQuestions.length === 0) {
-        return ["Could not generate questions from the provided text. Please try with different content."];
-    }
-
     return finalQuestions;
 };
 
