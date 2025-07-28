@@ -1,6 +1,6 @@
-# 🚀 AI Quiz Generator
+# AI Quiz Generator
 
-## ✨ About The Project
+## About The Project
 
 The goal of this project is to create a seamless and intelligent tool for **educators, students, and life-long learners**.  
 Users can paste any block of text—from an article about history to a chapter from a science textbook—and receive a well-formed quiz to test their knowledge and comprehension.
@@ -9,7 +9,7 @@ The application is designed to be **fast, user-friendly, and robust**, handling 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend:
 - **React.js** – For building a dynamic and responsive user interface.
@@ -26,7 +26,7 @@ The application is designed to be **fast, user-friendly, and robust**, handling 
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 quiz-generator-app/
 ├── backend/
@@ -58,9 +58,9 @@ quiz-generator-app/
 
 ---
 
-## 🏁 Getting Started & Local Setup
+## Getting Started & Local Setup
 
-### ✅ Prerequisites
+### Prerequisites
 
 Before you begin, make sure you have the following installed:
 
@@ -70,7 +70,7 @@ Before you begin, make sure you have the following installed:
 
 ---
 
-### 📦 Step 1: Clone the Repository
+### Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/quiz-generator-app.git
@@ -78,7 +78,7 @@ cd quiz-generator-app
 ```
 
 
-🛠️ Step 2: Setup the Backend
+Step 2: Setup the Backend
 
 Navigate to the backend directory:
 
@@ -104,7 +104,7 @@ Example:
 MONGO_URI=mongodb+srv://abc:abc123@cluster0.abcde.mongodb.net/quizdb
 ```
 
-🎨 Step 3: Setup the Frontend
+Step 3: Setup the Frontend
 
 Navigate to the frontend directory:
 
@@ -118,9 +118,9 @@ Install frontend dependencies:
 npm install
 ```
 
-🚀 Step 4: Run the Application
+Step 4: Run the Application
 
-✅ Start the Backend Server
+Start the Backend Server
 
 In a terminal window, from the backend directory:
 
@@ -135,7 +135,7 @@ Server is running on http://localhost:5001
 Connected to MongoDB
 ```
 
-✅ Start the Frontend Server
+Start the Frontend Server
 
 Open a second terminal, navigate to the `frontend` directory, and run:
 
@@ -149,7 +149,7 @@ Your browser should open automatically to:
 http://localhost:3000
 ```
 
-## 🔍 How It Works
+## How It Works
 
 1. **User enters a block of text** in the frontend form.
 2. **Text is sent to the backend API** using Axios.
@@ -159,16 +159,16 @@ http://localhost:3000
 
 ---
 
-## 📁 File Breakdown
+## File Breakdown
 
-### 🔙 Backend
+### Backend
 
 - `QuizController.js` – Handles incoming HTTP requests (text submission, quiz retrieval).
 - `QuizModel.js` – Mongoose schema for storing quiz questions and metadata.
 - `QuizRoutes.js` – Defines routes like `/generate`, `/quizzes`, etc.
 - `nlpService.js` – Invokes and loads the Transformer model for quiz generation.
 
-### 🎨 Frontend
+### Frontend
 
 - `QuizForm.js` – UI component for text input and quiz generation button.
 - `QuizDisplay.js` – Displays the returned quiz questions.
@@ -178,7 +178,7 @@ http://localhost:3000
 
 ---
 
-## 🔐 Environment Variables
+## Environment Variables
 
 Create a `.env` file inside the `backend/` directory with the following key:
 
@@ -186,7 +186,7 @@ Create a `.env` file inside the `backend/` directory with the following key:
 MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/<database-name>
 ```
 
-## 📌 Notes
+## Notes
 
 - Ensure **MongoDB Atlas** allows connections from your IP (whitelist it in the Atlas dashboard).
 - The AI model (`flan-t5-small`) runs inside **Node.js** using [`@xenova/transformers`](https://www.npmjs.com/package/@xenova/transformers).
@@ -194,7 +194,7 @@ MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/<database-name>
 
 ---
 
-## 🧠 Future Improvements
+## Future Improvements
 
 - User authentication and login (JWT).
 - Track user scores and progress.
@@ -204,13 +204,13 @@ MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/<database-name>
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and available under the **[MIT License](https://opensource.org/licenses/MIT)**.
 
 ---
 
-## 📬 Contact
+## Contact
 
 Created by **Raman** – feel free to reach out on [GitHub](https://github.com/MisterStranger03).
 
